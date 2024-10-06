@@ -1,2 +1,6 @@
-package org.example;public interface FlyingBehaviour {
+package org.example;
+
+public interface FlyingBehaviour {
+    public String makeFly();
+
 }

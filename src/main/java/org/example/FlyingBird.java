@@ -1,2 +1,5 @@
-package org.example;public interface FlyingBird {
+package org.example;
+
+public interface FlyingBird {
+    public String fly();
 }
