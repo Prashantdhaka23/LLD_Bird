@@ -1,14 +1,14 @@
 
 # Bird LLD (Low-Level Design)
 
-This project implements a Low-Level Design (LLD) for a bird hierarchy featuring five types of birds: **Pigeon**, **Crow**, **Sparrow**, **Ostrich**, and **Penguin**. The design adheres to SOLID principles to ensure maintainability, scalability, and clarity.
+This project implements a Low-Level Design (LLD) for a bird hierarchy featuring five types of birds: **Pigeon**, **Crow**, **Sparrow**, **Ostrich**, and **Penguin**. The design adheres to SOLID principles to ensure maintainability, scalability, and reuseability.
 
 ## Requirements
 
 - **Bird Types**:
   - **Crow**: Can fly and makes a sound ("Caw").
   - **Sparrow**: Can fly and makes a sound ("Chirp").
-  - **Pigeon**: Cannot fly but makes a sound ("Coo").
+  - **Pigeon**: Can fly but makes a sound ("Coo").
   - **Ostrich**: Cannot fly but makes a sound ("Boom").
   - **Penguin**: Cannot fly but makes a sound ("Squawk").
 
@@ -35,10 +35,10 @@ To create and interact with different bird types:
 ```java
 Bird crow = new Crow();
 System.out.println(crow.fly()); // Outputs: "Flying like Crow/Sparrow"
-System.out.println(crow.makeSound()); // Outputs: "Caw"
+System.out.println(crow.makeSound()); // Outputs: "Caw Caw Caw"
 
 Bird pigeon = new Pigeon();
-System.out.println(pigeon.makeSound()); // Outputs: "Coo"
+System.out.println(pigeon.makeSound()); // Outputs: "Coo Coo Coo"
 ```
 
 ## Installation
